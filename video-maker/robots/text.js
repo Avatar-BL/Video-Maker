@@ -2,7 +2,6 @@ const algorithmia = require('algorithmia')
 const algorithmiaApiKey = require('../credentials/algorithmia.json').apiKey
 const sentenceBoundaryDetection = require('sbd')
 const state = require('./state.js')
-
 const watsonApiKey = require('../credentials/watson-nlu.json').apikey
 const NaturalLanguageUnderstandingV1 = require('watson-developer-cloud/natural-language-understanding/v1.js')
  
@@ -124,4 +123,4 @@ async function robot() {
   }
 }
 
-module.exports = robot
+module.exports = robot 
